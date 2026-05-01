@@ -1,0 +1,1416 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Post - Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page" class="site">
+
+        <header class="header" role="banner">
+            <!-- TOP BAR -->
+            <div class="header__top">
+                <div class="header__inner header__inner--top">
+
+                    <div class="header__actions">
+
+                        <button class="header__sections-toggle" aria-label="Open sections menu">
+                            <span class="header__hamburger" aria-hidden="true">
+                                <span></span><span></span><span></span>
+                            </span>
+                            <span class="header__sections-label">Sections</span>
+                        </button>
+
+                        <a href="#" class="header__icon-button" aria-label="Search">
+                            <svg viewBox="0 0 24 24" class="header__icon" aria-hidden="true">
+                                <circle cx="11" cy="11" r="6.75"></circle>
+                                <path d="M16 16L21 21"></path>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="header__icon-button" aria-label="Newsletter">
+                            <svg viewBox="0 0 24 24" class="header__icon" aria-hidden="true">
+                                <path d="M2.75 5.25H21.25V18.75H2.75z"></path>
+                                <path d="M3.5 6L12 13.25L20.5 6"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <a href="index.html" class="header__logo-link" aria-label="Homepage">
+                        <span class="header__logo">NEW YORK POST</span>
+                    </a>
+
+                    <div class="header__promo-wrapper">
+                        <a href="#" class="header__promo" aria-label="Read the latest on Page Six">
+                            <span class="header__promo-text">
+                                <span>Read the</span>
+                                <span>latest on</span>
+                            </span>
+                            <span class="header__promo-brand">Page Six</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BOTTOM BAR -->
+            <div class="header__bottom">
+                <div class="header__inner header__inner--bottom">
+
+                    <div class="header__bottom-left"></div>
+
+                    <nav class="primary-nav">
+                        <ul class="primary-nav__list">
+                            <li class="primary-nav__item"><a href="#" class="primary-nav__link">Page Six</a></li>
+                            <li class="primary-nav__item"><a href="#" class="primary-nav__link">Sports</a></li>
+                            <li class="primary-nav__item"><a href="#" class="primary-nav__link">Metro</a></li>
+                            <li class="primary-nav__item"><a href="#" class="primary-nav__link">Opinion</a></li>
+                            <li class="primary-nav__item"><a href="#" class="primary-nav__link">Podcasts</a></li>
+                            <li class="primary-nav__item"><a href="#" class="primary-nav__link">Business</a></li>
+                            <li class="primary-nav__item"><a href="#" class="primary-nav__link">Shopping</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__bottom-right">
+                        <div class="edition-switcher">
+                            <span class="edition-switcher__label">Edition</span>
+                            <div class="edition-switcher__group">
+                                <a href="#" class="edition-switcher__option">CA</a>
+                                <a href="#" class="edition-switcher__option is-active">NY</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+
+
+        <div class="container-xl mt-5 px-2 d-none d-md-block">
+            <div class="promo-banner-section border-bottom border-dark">
+                <div class="row nyp-promo-row g-0">
+                    <div class="col-4 nyp-promo-col border-end ">
+                        <a href="#" class="promo-link h-100">
+                            <div class="promo-img-wrapper">
+                                <img src="https://via.placeholder.com/150x100/cccccc/666666?text=Immagine+1"
+                                    alt="Promo 1" class="img-fluid">
+                            </div>
+                            <div class="promo-text-wrapper">
+                                <span class="promo-text-main">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</span>
+                                <span class="promo-text-cta">LISTEN NOW <span class="arrow-red">&gt;</span></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4 nyp-promo-col border-end ">
+                        <a href="#" class="promo-link h-100">
+                            <div class="promo-img-wrapper">
+                                <img src="https://via.placeholder.com/150x100/cccccc/666666?text=Immagine+2"
+                                    alt="Promo 2" class="img-fluid">
+                            </div>
+                            <div class="promo-text-wrapper">
+                                <span class="promo-text-main">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</span>
+                                <span class="promo-text-cta">SIGN UP NOW <span class="arrow-red">&gt;</span></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4 nyp-promo-col">
+                        <a href="#" class="promo-link h-100">
+                            <div class="promo-img-wrapper">
+                                <img src="https://via.placeholder.com/150x100/cccccc/666666?text=Immagine+3"
+                                    alt="Promo 3" class="img-fluid">
+                            </div>
+                            <div class="promo-text-wrapper">
+                                <span class="promo-text-main">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.</span>
+                                <span class="promo-text-cta">WATCH NOW <span class="arrow-red">&gt;</span></span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <div class="container-xl px-2 home">
+                <div class="row justify-content-center layout-shell align-items-stretch">
+                    <section class="col-12 col-lg-8 pe-4 layout-item-main">
+                        <article>
+                            <header>
+                                <h2 class="hero-title__heading">
+                                    Lorem ipsum
+                                </h2>
+                            </header>
+
+                            <div class="hero-grid row g-2">
+                                <div class="col">
+                                    <img src="https://placehold.co/800x500" class="img-fluid" alt="main image">
+                                </div>
+                            </div>
+
+                            <div class="hero-description mt-3 text-center">
+                                <h2 class="text-dark fs-5">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.
+                                </h2>
+                                <p class="text-muted small">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore
+                                    magna aliqua.
+                                </p>
+                            </div>
+                        </article>
+
+                        <section class="news-box container-fluid">
+                            <div class="row">
+                                <article class="col-4 border-end ">
+                                    <div class="news-item">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="news-image-wrapper mb-2">
+                                                <img src="https://placehold.co/400x250/e0e0e0/000000?text=400x250"
+                                                    alt="CBS News anchor Tony Dokoupil" class="img-fluid w-100">
+                                            </div>
+                                            <div class="news-text-wrapper">
+                                                <h3 class="news-title text-dark mb-0 fs-6">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="col-4">
+                                    <div class="news-item">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="news-image-wrapper mb-2">
+                                                <img src="https://placehold.co/400x250/e0e0e0/000000?text=400x250"
+                                                    alt="Donna sorridente che prova un sensore" class="img-fluid w-100">
+                                            </div>
+                                            <div class="news-text-wrapper">
+                                                <h3 class="news-title text-dark mb-0 fs-6">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="col-4 border-start ">
+                                    <div class="news-item">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="news-image-wrapper mb-2">
+                                                <img src="https://placehold.co/400x250/e0e0e0/000000?text=400x250"
+                                                    alt="Eric Swalwell" class="img-fluid w-100">
+                                            </div>
+                                            <div class="news-text-wrapper">
+                                                <h3 class="news-title text-dark mb-0 fs-6">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+
+                        <div class="ad-container d-flex justify-content-center align-items-center">
+                            <div class="ad-wrapper text-center w-100">
+                                <img src="https://placehold.co/728x90/e0e0e0/000000?text=728x90" class="img-fluid w-100 h-100 object-fit-cover" alt="Spazio pubblicitario">
+                                <p class="ad-label text-uppercase mb-0 mt-1">Advertisement</p>
+
+                            </div>
+                        </div>
+
+                        <section class="multi-news container-fluid">
+                            <div class="row">
+                                <div class="col-8 border-end ">
+                                    <article class="h-100">
+                                        <h2 class="main-news-title mb-3">
+                                            <span class="text-nyp-red">Lorem ipsum</span>
+                                            <span class="text-dark">
+                                                dolor sit amet consectetur adipiscing elit sed do eiusmod
+                                            </span>
+                                        </h2>
+                                        <div class="row g-1 mb-2">
+                                            <div class="col-6">
+                                                <img src="https://placehold.co/400x400/e0e0e0/000000?text=400x400"
+                                                    class="img-fluid w-100 h-100 object-fit-cover" alt="Dettaglio sinistra">
+                                            </div>
+                                            <div class="col-6 d-flex flex-column gap-1">
+                                                <img src="https://placehold.co/400x195/e0e0e0/000000?text=400x195"
+                                                    class="img-fluid w-100 object-fit-cover flex-grow-1"
+                                                    style="height: 49%;" alt="Dettaglio alto destra">
+                                                <img src="https://placehold.co/400x195/e0e0e0/000000?text=400x195"
+                                                    class="img-fluid w-100 object-fit-cover flex-grow-1"
+                                                    style="height: 49%;" alt="Dettaglio basso destra">
+                                            </div>
+                                        </div>
+                                        <p class="main-news-caption text-muted mt-2 mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam.
+                                        </p>
+                                    </article>
+                                </div>
+                                <div class="col-4 d-flex flex-column gap-2">
+                                    <article class="flex-grow-1 pb-2 border-bottom ">
+                                        <img src="https://placehold.co/400x250/e0e0e0/000000?text=400x250"
+                                            class="img-fluid w-100 mb-2" alt="Spalla 1">
+                                        <h2 class="side-news-title text-dark mb-0 fs-5">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.
+                                        </h2>
+                                    </article>
+                                    <article class="flex-grow-1">
+                                        <img src="https://placehold.co/400x250/e0e0e0/000000?text=400x250"
+                                            class="img-fluid w-100 mb-2" alt="Spalla 2">
+                                        <h2 class="side-news-title text-dark mb-0 fs-5">
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                        </h2>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="category-opinions">
+                            <div class="category-section">
+                                <div class="category-header d-flex align-items-center mb-3">
+                                    <div class="header-line flex-grow-1"></div>
+
+                                    <div class="category-title-box">
+                                        <h2 class="mb-0">Opinion</h2>
+                                    </div>
+
+                                    <div class="header-line flex-grow-1"></div>
+                                </div>
+                            </div>
+
+                            <section class="container-fluid">
+                                <div class="row">
+                                    <article class="col-4">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="https://placehold.co/234x136/e0e0e0/000000?text=234x136"
+                                                class="img-fluid w-100 mb-2">
+                                            <div>
+                                                <div class="category-author text-uppercase fw-bold fst-italic mb-1">
+                                                    Editorial
+                                                </div>
+                                                <h2 class="category-news-title mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="col-4">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="https://placehold.co/234x136/e0e0e0/000000?text=234x136"
+                                                class="img-fluid w-100 mb-2">
+                                            <div>
+                                                <div class="category-author text-uppercase fw-bold fst-italic mb-1">Editorial
+                                                </div>
+                                                <h2 class="category-news-title mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <article class="col-4">
+                                        <a href="#" class="text-decoration-none">
+                                            <img src="https://placehold.co/234x136/e0e0e0/000000?text=234x136"
+                                                class="img-fluid w-100 mb-2">
+                                            <div>
+                                                <div class="category-author text-uppercase fw-bold fst-italic mb-1">Editorial
+                                                </div>
+                                                <h2 class="category-news-title mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                            </section>
+                        </div>
+
+                        <article class="container-fluid border-top border-bottom py-3">
+                            <div class="row mb-3">
+                                <img src="https://placehold.co/744x496/e0e0e0/000000?text=744x496" class="img-fluid w-100 article-main-img" alt="Lorem ipsum">
+                            </div>
+                            <div class="row">
+                                <span class="mx-auto w-auto article-badge text-uppercase fw-bold fst-italic">Lorem</span>
+                            </div>
+                            <div class="row">
+                                <h2 class="article-headline text-center mb-3">
+                                    <span class="headline-red">Lorem ipsum</span> <span class="headline-black">
+                                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                                    </span>
+                                </h2>
+                            </div>
+                            <div class="row">
+                                <p class="article-description mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim
+                                    veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </article>
+
+                        <section class="news-box container-fluid">
+                            <div class="row">
+                                <article class="col-4 border-end ">
+                                    <div class="news-item">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="news-image-wrapper mb-2">
+                                                <img src="https://placehold.co/400x250/e0e0e0/000000?text=400x250"
+                                                    alt="CBS News anchor Tony Dokoupil" class="img-fluid w-100">
+                                            </div>
+                                            <div class="news-text-wrapper">
+                                                <h3 class="news-title text-dark mb-0 fs-6">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="col-4">
+                                    <div class="news-item">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="news-image-wrapper mb-2">
+                                                <img src="https://placehold.co/400x250/e0e0e0/000000?text=400x250"
+                                                    alt="Donna sorridente che prova un sensore" class="img-fluid w-100">
+                                            </div>
+                                            <div class="news-text-wrapper">
+                                                <h3 class="news-title text-dark mb-0 fs-6">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+
+                                <article class="col-4 border-start ">
+                                    <div class="news-item">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="news-image-wrapper mb-2">
+                                                <img src="https://placehold.co/400x250/e0e0e0/000000?text=400x250"
+                                                    alt="Eric Swalwell" class="img-fluid w-100">
+                                            </div>
+                                            <div class="news-text-wrapper">
+                                                <h3 class="news-title text-dark mb-0 fs-6">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                </h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+
+                        <article class="container-fluid border-top border-bottom py-3">
+                            <div class="row g-1 mb-2">
+                                <div class="col-6">
+                                    <img src="https://placehold.co/372x496/e0e0e0/000000?text=372x496" class="img-fluid w-100 img-split-left" alt="Lorem sinistra">
+                                </div>
+                                <div class="col-6 d-flex flex-column gap-1">
+                                    <img src="https://placehold.co/372x246/e0e0e0/000000?text=372x246" class="img-fluid w-100 img-split-right" alt="Lorem alto destra">
+                                    <img src="https://placehold.co/372x246/e0e0e0/000000?text=372x246" class="img-fluid w-100 img-split-right" alt="Lorem basso destra">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="mx-auto w-auto article-badge text-uppercase fw-bold fst-italic">Lorem</span>
+                            </div>
+                            <div class="row">
+                                <h2 class="article-headline split-headline mb-3">
+                                    <span class="headline-red">Lorem ipsum</span> <span class="headline-black">
+                                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                                    </span>
+                                </h2>
+                            </div>
+                            <div class="row">
+                                <p class="article-description mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim
+                                    veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </article>
+
+                        <section class="container-fluid">
+                            <div class="row align-items-start">
+                                <div class="col-8 pe-3 border-end">
+                                    <article class="h-100">
+                                        <h2 class="article-headline split-headline mb-3">
+                                            <span class="text-nyp-red">Lorem ipsum</span>
+                                            <span class="text-dark">
+                                                dolor sit amet consectetur adipiscing elit sed do eiusmod
+                                            </span>
+                                        </h2>
+                                        <div class="row g-1 mb-2">
+                                            <div class="col-6">
+                                                <img src="https://placehold.co/400x400/e0e0e0/000000?text=400x400"
+                                                    class="img-fluid w-100 h-100 object-fit-cover" alt="Dettaglio sinistra">
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="https://placehold.co/400x400/e0e0e0/000000?text=400x400"
+                                                    class="img-fluid w-100 h-100 object-fit-cover" alt="Dettaglio alto destra">
+                                            </div>
+                                        </div>
+                                        <p class="article-description mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                                            tempor incididunt ut labore
+                                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                            in voluptate.
+                                        </p>
+                                    </article>
+                                </div>
+                                <div class="col-4 d-flex flex-column gap-2 ps-3 pe-0">
+                                    <article class="news-box-container">
+                                        <div class="news-box-header-wrapper">
+                                            <div class="news-box-header width-metro">
+                                                <h2>METRO</h2>
+                                            </div>
+                                        </div>
+                                        <div class="news-box-content d-flex flex-column">
+                                            <ul class="list-unstyled mb-0 flex-grow-1 d-flex flex-column justify-content-between">
+                                                <li class="news-box-item border-bottom border-dark border-opacity-25">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <img src="https://placehold.co/400x200/e0e0e0/000000?text=400x200" class="img-fluid w-100 mb-2" alt="Metro Placeholder">
+                                                        <h3 class="news-box-item-title mb-0">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                            sed do eiusmod tempor.
+                                                        </h3>
+                                                    </a>
+                                                </li>
+                                                <li class="news-box-item border-bottom border-dark border-opacity-25">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <h3 class="news-box-item-title mb-0">
+                                                            Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip.
+                                                        </h3>
+                                                    </a>
+                                                </li>
+                                                <li class="news-box-item">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <h3 class="news-box-item-title mb-0">
+                                                            Duis aute irure dolor in reprehenderit in voluptate
+                                                            velit esse cillum dolore eu fugiat.
+                                                        </h3>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="text-end mt-3">
+                                                <a href="#" class="news-box-more-link text-uppercase fw-bold fst-italic text-decoration-none">
+                                                    SEE MORE METRO &gt;
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="container-fluid">
+                            <div class="row align-items-start">
+                                <div class="col-8 pe-3 border-end">
+                                    <article class="h-100">
+                                        <h2 class="article-headline split-headline mb-3">
+                                            <span class="text-nyp-red">Lorem ipsum</span>
+                                            <span class="text-dark">
+                                                dolor sit amet consectetur adipiscing elit sed do eiusmod
+                                            </span>
+                                        </h2>
+                                        <div class="row g-1 mb-2">
+                                            <div class="col-6">
+                                                <img src="https://placehold.co/400x400/e0e0e0/000000?text=400x400"
+                                                    class="img-fluid w-100 h-100 object-fit-cover" alt="Dettaglio sinistra">
+                                            </div>
+                                            <div class="col-6 d-flex flex-column gap-1">
+                                                <img src="https://placehold.co/400x195/e0e0e0/000000?text=400x195"
+                                                    class="img-fluid w-100 object-fit-cover flex-grow-1"
+                                                    style="height: 49%;" alt="Dettaglio alto destra">
+                                                <img src="https://placehold.co/400x195/e0e0e0/000000?text=400x195"
+                                                    class="img-fluid w-100 object-fit-cover flex-grow-1"
+                                                    style="height: 49%;" alt="Dettaglio basso destra">
+                                            </div>
+                                        </div>
+                                        <p class="article-description mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                                            tempor incididunt ut labore
+                                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris.
+                                        </p>
+                                    </article>
+                                </div>
+                                <div class="col-4 d-flex flex-column gap-2 ps-3 pe-0">
+                                    <article class="news-box-container">
+                                        <div class="news-box-header-wrapper d-flex justify-content-center">
+                                            <div class="news-box-header width-business">
+                                                <h2>BUSINESS</h2>
+                                            </div>
+                                        </div>
+                                        <div class="news-box-content d-flex flex-column h-100">
+                                            <ul
+                                                class="list-unstyled mb-0 flex-grow-1 d-flex flex-column justify-content-between">
+
+                                                <li
+                                                    class="news-box-item border-bottom border-dark border-opacity-25">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <img src="https://placehold.co/400x200/e0e0e0/000000?text=400x200"
+                                                            class="img-fluid w-100 mb-2">
+                                                        <h3 class="news-box-item-title mb-0">Lorem ipsum dolor sit
+                                                            amet, consectetur adipiscing.</h3>
+                                                    </a>
+                                                </li>
+
+                                                <li
+                                                    class="news-box-item border-bottom border-dark border-opacity-25">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <h3 class="news-box-item-title mb-0">Ut enim ad minim
+                                                            veniam, quis nostrud exercitation.</h3>
+                                                    </a>
+                                                </li>
+
+                                                <li class="news-box-item">
+                                                    <a href="#" class="text-decoration-none">
+                                                        <div
+                                                            class="category-author text-uppercase fw-bold fst-italic mb-1">
+                                                            LOREM IPSUM</div>
+                                                        <h3 class="news-box-item-title mb-0">Duis aute irure dolor
+                                                            in reprehenderit in voluptate.</h3>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="text-end mt-2">
+                                                <a href="#"
+                                                    class="news-box-more-link text-uppercase fw-bold fst-italic text-decoration-none">
+                                                    SEE MORE BUSINESS >
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="container-fluid">
+                            <div class="row">
+                                <div class="psh-header-centered-line pe-0">
+                                    <div class="psh-bg-line"></div>
+                                    <div class="psh-title-parallelogram">
+                                        <a href="#" class="psh-logo-link">
+                                            <span class="psh-logo-text">Page Six</span>
+                                            <span class="psh-sub-text">Hollywood</span>
+                                        </a>
+                                    </div>
+                                    <div class="psh-see-all-wrapper">
+                                        <a href="#" class="see-all-link">SEE MORE <span
+                                                class="red-arrow">&gt;</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row psh-content-wrapper">
+                                <article class="col-4 border-end">
+                                    <a href="#" class="psh-link">
+                                        <img src="https://placehold.co/400x250/f0f0f0/666666?text="
+                                            alt="Hollywood 1">
+                                        <h2 class="psh-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.</h2>
+                                    </a>
+                                </article>
+
+                                <article class="col-4">
+                                    <a href="#" class="psh-link">
+                                        <img src="https://placehold.co/400x250/f0f0f0/666666?text="
+                                            alt="Hollywood 2">
+                                        <h2 class="psh-title">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</h2>
+                                    </a>
+                                </article>
+
+                                <article class="col-4 border-start ">
+                                    <a href="#" class="psh-link">
+                                        <img src="https://placehold.co/400x250/f0f0f0/666666?text=400x250"
+                                            alt="Hollywood 3">
+                                        <h2 class="psh-title">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</h2>
+                                    </a>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="multi-news container-fluid">
+                            <div class="row">
+                                <div class="col-4 d-flex flex-column gap-2 border-end">
+                                    <article class="flex-grow-1 pb-2 border-bottom ">
+                                        <img src="https://placehold.co/400x250/e0e0e0/000000?text=400x250"
+                                            class="img-fluid w-100 mb-2" alt="Spalla 1">
+                                        <h2 class="news-sub-title text-dark mb-0 fs-5">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.
+                                        </h2>
+                                    </article>
+                                    <article class="flex-grow-1">
+                                        <img src="https://placehold.co/400x250/e0e0e0/000000?text=400x250"
+                                            class="img-fluid w-100 mb-2" alt="Spalla 2">
+                                        <h2 class="news-sub-title text-dark mb-0 fs-5">
+                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                                        </h2>
+                                    </article>
+                                </div>
+                                <div class="col-8">
+                                    <article class="h-100">
+                                        <h2 class="main-news-title mb-3">
+                                            <span class="text-nyp-red">Lorem ipsum</span>
+                                            <span class="text-dark">
+                                                dolor sit amet consectetur adipiscing elit sed do eiusmod
+                                            </span>
+                                        </h2>
+                                        <div class="row g-1 mb-2">
+                                            <div class="col">
+                                                <img src="https://placehold.co/600x350/dddddd/666666?text=600x350" class="img-fluid w-100 mb-2" alt="Placeholder Principale">
+                                            </div>
+                                        </div>
+                                        <p class="main-news-caption text-muted mt-2 mb-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam.
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="container-fluid news-section">
+                            <div class="row news-row">
+                                <article class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>US NEWS</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="News">
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit sed do.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Ut enim ad minim veniam,
+                                                    quis nostrud exercitation.</a></li>
+                                            <li class="item-standard"><a href="#">Duis aute irure dolor in
+                                                    reprehenderit in voluptate.</a></li>
+                                            <li class="item-standard"><a href="#">Excepteur sint occaecat
+                                                    cupidatat non proident.</a></li>
+                                        </ul>
+                                    </section>
+                                </article>
+                                <article class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>SPORTS</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="Sports">
+                                                    <h3>Sed ut perspiciatis unde omnis iste natus error sit
+                                                        voluptatem.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Nemo enim ipsam voluptatem
+                                                    quia voluptas sit aspernatur.</a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Neque porro quisquam est,
+                                                    qui dolorem ipsum quia.</a></li>
+                                            <li class="item-standard"><a href="#">Quis autem vel eum iure
+                                                    reprehenderit qui in ea.</a></li>
+                                        </ul>
+                                    </section>
+                                </article>
+                                <article class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>METRO</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="Metro">
+                                                    <h3>
+                                                        At vero eos et accusamus et iusto odio dignissimos ducimus.
+                                                    </h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard">
+                                                <a href="#">
+                                                    Et harum quidem rerum facilis est et expedita distinctio.
+                                                </a>
+                                            </li>
+                                            <li class="item-standard">
+                                                <a href="#">
+                                                    Nam libero tempore, cum soluta nobis est eligendi optio.
+                                                </a>
+                                            </li>
+                                            <li class="item-standard">
+                                                <a href="#">
+                                                    Temporibus autem quibusdam et aut officiis debitis.
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                            <div class="row news-row">
+                                <div class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>ENTERTAINMENT</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="News">
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit sed do.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Ut enim ad minim veniam,
+                                                    quis nostrud exercitation.</a></li>
+                                            <li class="item-standard"><a href="#">Duis aute irure dolor in
+                                                    reprehenderit in voluptate.</a></li>
+                                            <li class="item-standard"><a href="#">Excepteur sint occaecat
+                                                    cupidatat non proident.</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>OPINION</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="News">
+                                                    <h3>Sed ut perspiciatis unde omnis iste natus error sit
+                                                        voluptatem.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Nemo enim ipsam voluptatem
+                                                    quia voluptas sit aspernatur.</a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Neque porro quisquam est,
+                                                    qui dolorem ipsum quia.</a></li>
+                                            <li class="item-standard"><a href="#">Quis autem vel eum iure
+                                                    reprehenderit qui in ea.</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>BUSINESS</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="News">
+                                                    <h3>At vero eos et accusamus et iusto odio dignissimos
+                                                        ducimus.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Et harum quidem rerum
+                                                    facilis est et expedita distinctio.</a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Nam libero tempore, cum
+                                                    soluta nobis est eligendi optio.</a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Temporibus autem quibusdam
+                                                    et aut officiis debitis.</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="row news-row">
+                                <div class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>WELLNESS</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="Wellness News">
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit sed do.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Ut enim ad minim veniam,
+                                                    quis nostrud exercitation.</a></li>
+                                            <li class="item-standard"><a href="#">Duis aute irure dolor in
+                                                    reprehenderit in voluptate.</a></li>
+                                            <li class="item-standard"><a href="#">Excepteur sint occaecat
+                                                    cupidatat non proident.</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>SHOPPING</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="Shopping News">
+                                                    <h3>Sed ut perspiciatis unde omnis iste natus error sit
+                                                        voluptatem.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Nemo enim ipsam voluptatem
+                                                    quia voluptas sit aspernatur.</a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Neque porro quisquam est,
+                                                    qui dolorem ipsum quia.</a></li>
+                                            <li class="item-standard"><a href="#">Quis autem vel eum iure
+                                                    reprehenderit qui in ea.</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>REAL ESTATE</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="Real Estate News">
+                                                    <h3>At vero eos et accusamus et iusto odio dignissimos
+                                                        ducimus.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Et harum quidem rerum
+                                                    facilis est et expedita distinctio.</a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Nam libero tempore, cum
+                                                    soluta nobis est eligendi optio.</a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Temporibus autem quibusdam
+                                                    et aut officiis debitis.</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="row news-row">
+                                <div class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>LIFESTYLE</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="Lifestyle News">
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit sed do.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Ut enim ad minim veniam,
+                                                    quis nostrud exercitation.</a></li>
+                                            <li class="item-standard"><a href="#">Duis aute irure dolor in
+                                                    reprehenderit in voluptate.</a></li>
+                                            <li class="item-standard"><a href="#">Excepteur sint occaecat
+                                                    cupidatat non proident.</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>TECH</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="Tech News">
+                                                    <h3>Sed ut perspiciatis unde omnis iste natus error sit
+                                                        voluptatem.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Nemo enim ipsam voluptatem
+                                                    quia voluptas sit aspernatur.</a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Neque porro quisquam est,
+                                                    qui dolorem ipsum quia.</a></li>
+                                            <li class="item-standard"><a href="#">Quis autem vel eum iure
+                                                    reprehenderit qui in ea.</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                                <div class="col-12 col-md-4 mb-4">
+                                    <section class="news-column">
+                                        <header class="column-header">
+                                            <h2>MEDIA</h2>
+                                            <span class="header-arrow">></span>
+                                        </header>
+                                        <ul class="column-list">
+                                            <li class="item-featured">
+                                                <a href="#">
+                                                    <img src="https://placehold.co/600x400/e0e0e0/000000?text=600x400"
+                                                        alt="Media News">
+                                                    <h3>At vero eos et accusamus et iusto odio dignissimos
+                                                        ducimus.</h3>
+                                                </a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Et harum quidem rerum
+                                                    facilis est et expedita distinctio.</a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Nam libero tempore, cum
+                                                    soluta nobis est eligendi optio.</a>
+                                            </li>
+                                            <li class="item-standard"><a href="#">Temporibus autem quibusdam
+                                                    et aut officiis debitis.</a></li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                        </section>
+
+
+                    </section>
+
+                    <aside class="col-12 col-lg-4 layout-item-sidebar d-flex flex-column justify-content-between">
+
+                        <div class="sticky-zone cover">
+                            <article class="widget-covers">
+                                <div class="covers-header-line">
+                                    <div class="covers-title-box">
+                                        <h2><a href="#">COVERS</a></h2>
+                                    </div>
+                                </div>
+                            
+                                <h3 class="covers-today-title">Today's Cover</h3>
+                            
+                                <a href="#" class="widget-cover__link">
+                                    <div class="covers-subheading-group">
+                                        <h4 class="widget-cover__subheading">
+                                            <span class="subheading-front">Front Cover</span>
+                                            <span class="subheading-back">Back Cover</span>
+                                        </h4>
+                                        <h4 class="widget-cover__flip-text">FLIP FOR BACK COVER</h4>
+                                    </div>
+                            
+                                    <div class="widget-cover__images-container">
+                                        <div class="widget-cover__img back-img">
+                                            <img src="https://placehold.co/180x210" alt="Back Cover">
+                                        </div>
+                                        <div class="widget-cover__img front-img">
+                                            <img src="https://placehold.co/180x210" alt="Front Cover">
+                                        </div>
+                                    </div>
+                                </a>
+                            
+                                <div class="widget-cover__footer-line">
+                                    <a href="#" class="browse-link">
+                                        BROWSE COVERS <span class="red-arrow">&gt;</span>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="sticky-zone trending-sport">
+                            <section class="sidebar-trending-widget">
+                                <h2 class="trending-title">TRENDING IN SPORTS</h2>
+                                <div class="red-bar mb-2"></div>
+                                <div class="trending-content">
+                                        <article>
+                                            <a href="#" class="trending-item">
+                                                <div class="trending-img-box">
+                                                    <img src="https://placehold.co/120x80/cccccc/666666?text=120x80" alt="Sport">
+                                                </div>
+                                                <div class="trending-text-box">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="trending-item">
+                                                <div class="trending-img-box">
+                                                    <img src="https://placehold.co/120x80/cccccc/666666?text=120x80" alt="Sport">
+                                                </div>
+                                                <div class="trending-text-box">
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="trending-item">
+                                                <div class="trending-img-box">
+                                                    <img src="https://placehold.co/120x80/cccccc/666666?text=120x80" alt="Sport">
+                                                </div>
+                                                <div class="trending-text-box">
+                                                    Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="trending-item">
+                                                <div class="trending-img-box">
+                                                    <img src="https://placehold.co/120x80/cccccc/666666?text=120x80" alt="Sport">
+                                                </div>
+                                                <div class="trending-text-box">
+                                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa.
+                                                </div>
+                                            </a>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="trending-item">
+                                                <div class="trending-img-box">
+                                                    <img src="https://placehold.co/120x80/cccccc/666666?text=120x80" alt="Sport">
+                                                </div>
+                                                <div class="trending-text-box">
+                                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut.
+                                                </div>
+                                            </a>
+                                        </article>
+                                </div>
+                                <div class="trending-footer">
+                                    <a href="#">SEE ALL SPORTS <span class="red-arrow">&gt;</span></a>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="sticky-zone columnists">
+                            <section class="columnists-wrapper-border widget-columnists mt-4">
+                                <div class="columnists-header-box">
+                                    <h2 class="columnists-main-title">COLUMNISTS</h2>
+                                    <div class="columnist-red-bar"></div>
+                                </div>
+                                <ul class="columnists-list">
+                                    <li class="columnist-item">
+                                        <div class="columnist-header mb-2">
+                                            <div class="columnist-name-box">
+                                                <span class="columnist-name">Lore Lipsium</span>
+                                            </div>
+                                            <div class="columnist-photo">
+                                                <img src="https://placehold.co/80x80/e0e0e0/666666?text=80x80"
+                                                    alt="Author">
+                                            </div>
+                                        </div>
+                                        <div class="columnist-article-text">
+                                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                do eiusmod tempor
+                                                incididunt ut labore et dolore.</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="columnist-item">
+                                        <div class="columnist-header mb-2">
+                                            <div class="columnist-name-box">
+                                                <span class="columnist-name">Lore Lipsium</span>
+                                            </div>
+                                            <div class="columnist-photo">
+                                                <img src="https://placehold.co/80x80/e0e0e0/666666?text=80x80"
+                                                    alt="Author">
+                                            </div>
+                                        </div>
+                                        <div class="columnist-article-text">
+                                            <a href="#">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                laboris nisi ut aliquip ex ea
+                                                commodo.</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="columnist-item">
+                                        <div class="columnist-header mb-2">
+                                            <div class="columnist-name-box">
+                                                <span class="columnist-name">Lore Lipsium</span>
+                                            </div>
+                                            <div class="columnist-photo">
+                                                <img src="https://placehold.co/80x80/e0e0e0/666666?text=80x80"
+                                                    alt="Author">
+                                            </div>
+                                        </div>
+                                        <div class="columnist-article-text">
+                                            <a href="#">Duis aute irure dolor in reprehenderit in voluptate velit
+                                                esse cillum dolore eu fugiat
+                                                nulla.</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+
+                        <div class="sticky-zone horscopes">
+                            <article class="widget-horoscope mt-5 border-top border-2 border-dark">
+                                <h2 class="horoscope-main-title border-bottom border-dark-subtle pb-2">HOROSCOPES</h2>
+                                <div class="horoscope-content text-center">
+                                    <h3 class="sign-name">Lorem</h3>
+
+                                    <div class="sign-info">
+                                        <div class="sign-image-circle-large">
+                                            <img src="https://placehold.co/150x150/f0f0f0/666666?text=" alt="Taurus">
+                                        </div>
+
+                                        <p class="sign-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="horoscope-footer">
+                                    <div class="footer-line"></div>
+                                    <a href="#" class="all-horoscopes-link">
+                                        ALL HOROSCOPES <span class="red-arrow">&gt;</span>
+                                    </a>
+                                    <div class="footer-line"></div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="sticky-zone page-six">
+
+                            <section class="now-on-wrapper-border mt-4">
+                                <div class="now-on-header">
+                                    <div class="now-on-red-line-short"></div>
+                                    <span class="now-on-tag">NOW ON</span>
+                                    <div class="now-on-red-line-long"></div>
+                                </div>
+                                <div class="page-six-brand">
+                                    <a href="#" class="logo-link">
+                                        <h2 class="page-six-logo">Page Six</h2>
+                                    </a>
+                                </div>
+
+                                <ul class="now-on-list">
+                                    <li class="now-on-item feature">
+                                        <a href="#" class="now-on-link">
+                                            <div class="now-on-image-box">
+                                                <img src="https://placehold.co/300x200/f0f0f0/666666?text="
+                                                    alt="Placeholder">
+                                            </div>
+                                            <h3 class="now-on-title">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit sed do.</h3>
+                                        </a>
+                                    </li>
+
+                                    <li class="now-on-item">
+                                        <a href="#" class="now-on-link">
+                                            <h3 class="now-on-title">Sed do eiusmod tempor incididunt ut labore et
+                                                dolore magna.</h3>
+                                        </a>
+                                    </li>
+                                    <li class="now-on-item">
+                                        <a href="#" class="now-on-link">
+                                            <h3 class="now-on-title">Ut enim ad minim veniam, quis nostrud exercitation
+                                                ullamco.</h3>
+                                        </a>
+                                    </li>
+                                    <li class="now-on-item">
+                                        <a href="#" class="now-on-link">
+                                            <h3 class="now-on-title">Laboris nisi ut aliquip ex ea commodo consequat
+                                                duis aute.</h3>
+                                        </a>
+                                    </li>
+                                    <li class="now-on-item">
+                                        <a href="#" class="now-on-link">
+                                            <h3 class="now-on-title">Duis aute irure dolor in reprehenderit in voluptate
+                                                velit.</h3>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="now-on-footer">
+                                    <a href="#" class="see-all-link">SEE ALL <span>&gt;</span></a>
+                                </div>
+                            </section>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="site-footer mt-5">
+            <div class="container-xl">
+                <div class="footer-top d-flex align-items-center flex-wrap py-4">
+                    <div class="footer-logo">
+                        <a href="index.html" class="nyp-footer__logo-link" aria-label="New York Post home">
+                            <span class="nyp-footer__logo">NEW YORK POST</span>
+                        </a>
+                    </div>
+
+                    <div class="footer-socials"> 
+                        <ul class="social-list d-flex gap-2 mb-0 list-unstyled">
+                            <li><a href="#" class="social-link facebook"><span class="fb-icon">f</span></a></li>
+                            <li><a href="#" class="social-link twitter"><i class="bi bi-twitter-x"></i></a></li>
+                            <li><a href="#" class="social-link instagram"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#" class="social-link linkedin"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="#" class="social-link youtube"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#" class="social-link email"><i class="bi bi-envelope-fill"></i></a></li>
+                            <li><a href="#" class="social-link tiktok"><i class="bi bi-tiktok"></i></a></li>
+                            <li><a href="#" class="social-link snapchat"><i class="bi bi-snapchat"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-navigation py-4">
+                    <ul class="row list-unstyled mb-0">
+
+                        <li class="col-12 col-lg-4 mb-4 mb-lg-0">
+                            <h6 class="footer-heading">SECTIONS & FEATURES</h6>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="list-unstyled footer-sublist">
+                                        <li><a href="#">US NEWS</a></li>
+                                        <li><a href="#">WORLD NEWS</a></li>
+                                        <li><a href="#">SPORTS BETTING</a></li>
+                                        <li><a href="#">OPINION</a></li>
+                                        <li><a href="#">FASHION & BEAUTY</a></li>
+                                        <li><a href="#">LIFESTYLE</a></li>
+                                        <li><a href="#">MEDIA</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled footer-sublist">
+                                        <li><a href="#">METRO</a></li>
+                                        <li><a href="#">SPORTS</a></li>
+                                        <li><a href="#">BUSINESS</a></li>
+                                        <li><a href="#">ENTERTAINMENT</a></li>
+                                        <li><a href="#">SHOPPING</a></li>
+                                        <li><a href="#">REAL ESTATE</a></li>
+                                        <li><a href="#">TECH</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="col-6 col-lg-2 mb-4 mb-lg-0">
+                            <h6 class="footer-heading">POST SPORTS+</h6>
+                            <ul class="list-unstyled footer-sublist">
+                                <li><a href="#">SUBSCRIBE</a></li>
+                                <li><a href="#">ARTICLES</a></li>
+                                <li><a href="#">MANAGE</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="col-6 col-lg-2 mb-4 mb-lg-0">
+                            <h6 class="footer-heading">NEWSLETTERS & STORE</h6>
+                            <ul class="list-unstyled footer-sublist mb-4">
+                                <li><a href="#">EMAIL NEWSLETTERS</a></li>
+                                <li><a href="#">NY POST OFFICIAL STORE</a></li>
+                            </ul>
+                            <h6 class="footer-heading">HOME DELIVERY</h6>
+                            <ul class="list-unstyled footer-sublist">
+                                <li><a href="#">SUBSCRIBE</a></li>
+                                <li><a href="#">MANAGE SUBSCRIPTION</a></li>
+                                <li><a href="#">DELIVERY HELP</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="col-6 col-lg-2 mb-4 mb-lg-0">
+                            <h6 class="footer-heading">HELP/SUPPORT</h6>
+                            <ul class="list-unstyled footer-sublist mb-4">
+                                <li><a href="#">ABOUT NEW YORK POST</a></li>
+                                <li><a href="#">EDITORIAL STANDARDS</a></li>
+                                <li><a href="#">CUSTOMER SERVICE</a></li>
+                                <li><a href="#">COMMUNITY GUIDELINES</a></li>
+                            </ul>
+                            <h6 class="footer-heading">CONTACT US</h6>
+                            <ul class="list-unstyled footer-sublist">
+                                <li><a href="#">TIPS</a></li>
+                                <li><a href="#">NEWSROOM</a></li>
+                                <li><a href="#">LETTERS TO THE EDITOR</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="col-6 col-md-3 col-lg-1 mb-4 mb-lg-0">
+                            <h6 class="footer-heading">APPS</h6>
+                            <ul class="list-unstyled footer-sublist">
+                                <li><a href="#">IPHONE APP</a></li>
+                                <li><a href="#">IPAD APP</a></li>
+                                <li><a href="#">ANDROID PHONE</a></li>
+                                <li><a href="#">ANDROID TABLET</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="col-6 col-md-3 col-lg-1 mb-4 mb-lg-0">
+                            <h6 class="footer-heading">ADVERTISE</h6>
+                            <ul class="list-unstyled footer-sublist">
+                                <li><a href="#">MEDIA KIT</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <hr class="footer-divider border-secondary opacity-25">
+                <div class="footer-legal text-center py-4">
+                    <div class="copyright-links mb-2">
+                        <a href="#" class="text-decoration-none small text-secondary">Terms of Use</a>
+                        <span class="mx-1 text-secondary small">|</span>
+                        <a href="#" class="text-decoration-none small text-secondary">Subscription Terms</a>
+                        <span class="mx-1 text-secondary small">|</span>
+                        <a href="#" class="text-decoration-none small text-secondary">Privacy Notice</a>
+                        <span class="mx-1 text-secondary small">|</span>
+                        <a href="#" class="text-decoration-none small text-secondary">Sitemap</a>
+                    </div>
+                    <div class="copyright-links mb-3">
+                        <a href="#" class="text-decoration-none small text-secondary">Your California Privacy Rights</a>
+                        <span class="mx-1 text-secondary small">|</span>
+                        <a href="#" class="text-decoration-none small text-secondary">Do Not Sell My Personal
+                            Information</a>
+                    </div>
+                    <div class="maker-credits mt-4">
+                        <p class="small text-uppercase fw-bold mb-0 text-secondary">Project made by Levi Di Martino
+                            Serafim</p>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
