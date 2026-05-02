@@ -1855,6 +1855,7 @@ body {
     .header__logo {
         font-size: clamp(1.8rem, 6vw, 2.75rem);
         pointer-events: auto;
+        white-space: nowrap;
     }
 
     .header__bottom {
